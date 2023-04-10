@@ -1,11 +1,12 @@
 package ru.gloomyjana.tests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
 public class RegistrationWithRemoteDriverTests extends TestBase {
-
+    @Tag("registration_form")
     @Test
     void successfulRegistrationFormTest() {
         step("Generate data using Faker", () -> {
