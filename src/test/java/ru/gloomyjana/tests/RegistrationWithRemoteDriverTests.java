@@ -3,6 +3,9 @@ package ru.gloomyjana.tests;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Condition.appear;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 public class RegistrationWithRemoteDriverTests extends TestBase {
@@ -74,5 +77,39 @@ public class RegistrationWithRemoteDriverTests extends TestBase {
                             + testDataUsingFaker.cityName);
         });
 
+    }
+
+    @Tag("text_box")
+    @Test
+    void successfulFillTextBoxTest() {
+        step("Generate data using Faker", () -> {
+            testDataUsingFaker.GenerateDataTextBox();
+        });
+
+        step("Open form", () -> {
+            textBoxPage.openPage();
+        });
+        step("Remove banners and footer", () -> {
+            textBoxPage.removeBanners();
+        });
+        step("Set full name", () -> {
+           textBoxPage.setFullName(testDataUsingFaker.fullName);
+        });
+        step("Set email address", () -> {
+            textBoxPage.setUserEmail(testDataUsingFaker.userEmail);
+        });
+        step("Set current address", () -> {
+            textBoxPage.setCurrentAddress(testDataUsingFaker.userAddress);
+        });
+        step("Submit form", () -> {
+            textBoxPage.submitForm();
+        });
+
+        step("Verify results", () -> {
+            $(".border").should(appear);
+            $("#name.mb-1").shouldHave(text("Name:" + testDataUsingFaker.fullName));
+            $("#currentAddress.mb-1").shouldHave(text("Current Address :"
+                    + testDataUsingFaker.userAddress));
+        });
     }
 }

@@ -9,8 +9,8 @@ import java.util.Map;
 
 public class TestDataUsingFaker {
     Faker faker = new Faker(new Locale("en"));
-    String firstName, lastName, userEmail, userGender, phoneNumber, dayOfBirth, monthOfBirth,
-            yearOfBirth, subjects, hobbies, pathName, userAddress, stateName, cityName;
+    String firstName, lastName, userEmail, userGender, phoneNumber, dayOfBirth, monthOfBirth, yearOfBirth,
+            subjects, hobbies, pathName, userAddress, permanentAddress, stateName, cityName, fullName;
     String[] userSubjects, userHobbies;
     String[] allSubjects = new String[] {"Arts, Physics", "English, Chemistry",
             "Computer Science, History, Biology", "Maths, Civics"},
@@ -53,5 +53,12 @@ public class TestDataUsingFaker {
         cityName = getRandomCityFromState(stateName);
         userSubjects = subjects.split(", ");
         userHobbies = hobbies.split(", ");
+    }
+
+    public void GenerateDataTextBox() {
+        fullName = faker.name().fullName();
+        userEmail = faker.internet().emailAddress();
+        userAddress = faker.address().fullAddress();
+        permanentAddress = faker.address().fullAddress();
     }
 }

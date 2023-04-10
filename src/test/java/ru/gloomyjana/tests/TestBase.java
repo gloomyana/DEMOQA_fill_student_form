@@ -10,11 +10,13 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.gloomyjana.helpers.Attach;
 import ru.gloomyjana.pages.ModalPage;
 import ru.gloomyjana.pages.RegistrationPage;
+import ru.gloomyjana.pages.TextBoxPage;
 
 import java.util.Map;
 
 public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
+    TextBoxPage textBoxPage = new TextBoxPage();
     ModalPage modalPage = new ModalPage();
     TestDataUsingFaker testDataUsingFaker = new TestDataUsingFaker();
 
