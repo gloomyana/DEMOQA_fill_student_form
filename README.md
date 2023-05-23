@@ -2,7 +2,7 @@
 <img title="DEMOQA" src="https://demoqa.com/images/Toolsqa.jpg">
 
 ## :page_facing_up: Cодержание
-- [Описание, технологии и иструменты](#paperclip-технологии-и-инструменты)
+- [Технологии и иструменты](#paperclip-технологии-и-инструменты)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Allure отчет](#-allure-отчет)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
