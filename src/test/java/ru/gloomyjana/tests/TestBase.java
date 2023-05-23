@@ -10,21 +10,24 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.gloomyjana.helpers.Attach;
 import ru.gloomyjana.pages.ModalPage;
 import ru.gloomyjana.pages.RegistrationPage;
+import ru.gloomyjana.pages.TextBoxPage;
 
 import java.util.Map;
 
 public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
+    TextBoxPage textBoxPage = new TextBoxPage();
     ModalPage modalPage = new ModalPage();
     TestDataUsingFaker testDataUsingFaker = new TestDataUsingFaker();
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
-        Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.browser = System.getProperty("browser","chrome");
+        Configuration.browserVersion = System.getProperty("browser_version","100.0");
+        Configuration.browserSize = System.getProperty("browser_size","1920x1080");
+        Configuration.baseUrl = System.getProperty("base_url","https://demoqa.com");
+        Configuration.remote = "https://user1:1234@" +
+                System.getProperty("selenoid_url", "selenoid.autotests.cloud/wd/hub");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
