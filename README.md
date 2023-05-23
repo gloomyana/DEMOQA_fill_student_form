@@ -28,36 +28,41 @@
 - [x] Пример прогона теста в Selenoid
 
 ## <img width="3%" title="Jenkins" src="https://github.com/gloomyana/gloomyana/blob/main/icons/jenkins.svg"> Сборка в Jenkins
-[Сборка в Jenkins](https://jenkins.autotests.cloud/job/DEMOQA_fill_student_form/) \
-<img title="Jenkins project page" src="">
+[Сборка в Jenkins](https://jenkins.autotests.cloud/job/DEMOQA_fill_student_form/) 
+
+<img title="Jenkins project page" src="images/jenkins_project_page.png">
 
 Это параметризированная сборка, поэтому есть возможность выбрать браузер и версию и размер:
-<img title="Jenkins build parameters" src="">
+<img title="Jenkins build parameters" src="images/jenkins_build_parameters.png">
 
 Также есть возможность выбора таска и ветки проекта: \
-<img title="Jenkins build parameters" src="">
+<img title="Jenkins build parameters" src="images/jenkins_build_parameters2.png">
 
 ## <img width="3%" title="Allure Report" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_report.svg"> Allure отчет
 Главная страница отчета Allure содержит следующие блоки:
->- <code><strong>*ALLURE REPORT*</strong></code> - отображает дату и время теста, общее количество запущенных тестов, а также диаграмму с процентом и количеством успешных, упавших и сломавшихся в процессе выполнения тестов
->- <code><strong>*TREND*</strong></code> - отображает тенденцию выполнения тестов для всех запусков
->- <code><strong>*SUITES*</strong></code> - отображает распределение тестов по сьютам
-<img title="Allure Report" src=""> \
-Список тестов с шагами и тестовыми артефактами:
-<img title="Allure Report test 1" src="">
-<img title="Allure Report test 2" src="">
+- **ALLURE REPORT** - отображает дату и время теста, общее количество запущенных тестов, а также диаграмму с процентом и количеством успешных, упавших и сломавшихся в процессе выполнения тестов
+- **TREND** - отображает тенденцию выполнения тестов для всех запусков
+- **SUITES** - отображает распределение тестов по сьютам
 
-Также доступны дополнительные тестовые артефакты:
->- Last Screenshot
->- Page Source
->- Browser console logs
->- Video
-<img title="Allure Report test 3" src="">
+<img title="Allure Report" src="images/allure_report_main.png"> 
+
+Список тестов с шагами:
+
+<img title="Allure Report test 1" src="images/allure_report_test1.png">
+
+<img title="Allure Report test 2" src="images/allure_report_test2.png">
+
+После каждого теста доступны дополнительные тестовые артефакты:
+- Last Screenshot
+- Page Source
+- Browser console logs
+- Video
+<img title="Allure Report test 3" src="images/allure_report_attachments.png">
 
 ## <img width="3%" title="Telegram" src="https://github.com/gloomyana/gloomyana/blob/main/icons/telegram.svg"> Уведомления в Telegram
 
-<img title="Telegram bot message" src="">
+<img title="Telegram bot message" src="images/telegram_report.png">
 
 ## <img width="3%" title="Selenoid Video" src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenoid.svg"> Пример прогона теста в Selenoid
 
- <img title="Selenoid Video" src="https://im4.ezgif.com/tmp/ezgif-4-00661f68d5.gif">
+ <img title="Selenoid Video" src="images/selenoid_video.gif">
