@@ -2,13 +2,13 @@
 <img title="DEMOQA" src="https://demoqa.com/images/Toolsqa.jpg">
 
 ## :page_facing_up: Cодержание
-- [Описание, технологии и иструменты](#paperclip-описание-технологии-и-инструменты)
+- [Описание, технологии и иструменты](#paperclip-технологии-и-инструменты)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Allure отчет](#-allure-отчет)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Пример прогона теста в Selenoid](#-пример-прогона-теста-в-selenoid)
 
-## :paperclip: Описание. Технологии и инструменты
+## :paperclip: Технологии и инструменты
 <a href="https://www.java.com"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/java.svg" title="Java" alt="Java" width="40" height="40"/></a>
 <a href="https://selenide.org"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenide.svg" title="Selenide" alt="Selenide" width="40" height="40"/></a>
 <a href="https://junit.org/junit5"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/junit5.svg" title="JUnit5" alt="JUnit5" width="40" height="40"/></a>
